@@ -1,0 +1,32 @@
+{
+  "name": "app_tech",
+  "version": "1.0.0",
+  "description": "App web tech",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "App"
+  ],
+  "author": "ERRAFAIY",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.1",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.4"
+  },
+  "dependencies": {
+    "cssnano": "^5.1.14",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^5.1.0",
+    "rename": "^1.0.4",
+    "sass": "^1.57.1"
+  }
+}

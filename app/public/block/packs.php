@@ -1,0 +1,15 @@
+<div class="container mx-auto py-10 md:py-20">
+    <h2 class="text-center text-2xl md:text-[50px] font-bold mb-8 md:mb-12">
+        Les packs
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 md:gap-4">
+        <?php for($i = 0; $i < 2; $i++) { ?>
+            <div class="p-8 shadow-lg">
+                <span class="text-xl text-center">Basic</span>
+                <p class="text-4xl font-bold text-center mb-4">200 DH / Mois</p>
+                <p class="font-semibold text-center mb-5">Nemo deserunt possimus quo provident recusandae! Dolores qui architecto omnis pariatur eos voluptatibus sequi cum, non nesciunt aspernatur a?</p>
+                <a href="#" class="mx-auto px-8 py-3 mt-6 font-semibold border  sm:mt-12 dark:border-gray-700 cursor-pointer">Sign up</a>
+            </div>
+        <?php } ?>
+    </div>
+</div>
