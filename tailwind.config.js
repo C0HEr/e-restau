@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 const defaultTheme = require('tailwindcss/defaultTheme');
 module.exports = {
-  content: ["./app/**/*.{html,php}"],
+  content: ["./app/views/**/*.{html,php,twig}"],
   theme: {
     extend: {
       zIndex: {

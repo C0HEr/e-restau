@@ -25,8 +25,12 @@
   "dependencies": {
     "cssnano": "^5.1.14",
     "gulp-concat": "^2.6.1",
+    "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.1.0",
+    "gulp-twig": "^1.2.0",
+    "gulp-twig-php": "^0.2.1",
     "rename": "^1.0.4",
-    "sass": "^1.57.1"
+    "sass": "^1.57.1",
+    "twig": "^1.15.4"
   }
 }

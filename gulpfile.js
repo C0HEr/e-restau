@@ -1,11 +1,11 @@
 const gulp = require('gulp');
-const postcss = require('gulp-postcss');
-const tailwindcss = require('tailwindcss');
-const autoprefixer = require('autoprefixer');
-const cssnano = require('cssnano');
-const sass = require('gulp-sass')(require('sass'));
+     postcss = require('gulp-postcss'),
+     tailwindcss = require('tailwindcss'),
+     sass = require('gulp-sass')(require('sass'));
+     //twig = require('gulp-twig');
 
-gulp.task('css', function() {
+
+gulp.task('css', () => {
     const processors = [
         tailwindcss,
     ];
@@ -13,7 +13,20 @@ gulp.task('css', function() {
     .pipe(sass({ style: 'expanded' }))
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(postcss(processors))
-    //.pipe(rename({suffix: '.min'}))
-	//.pipe(minifycss())
-    .pipe(gulp.dest('./dist/css/'));
+    .pipe(gulp.dest('./assets/css/'));
 });
+
+//gulp.task('twig', () => {
+    //return gulp.src('./src/views/**/*.twig')
+    //.pipe(twig())
+    //.pipe(gulp.dest('./dest/app/'))
+//});*/
+
+// Watch task.
+gulp.task('watch', () => {
+    gulp.watch('./src/assets/scss/*.css',gulp.series('css'));
+    //gulp.watch('./src/views/**/*.twig',gulp.series('twig'));
+});
+
+// Default Task
+gulp.task('default', gulp.series('watch'));
